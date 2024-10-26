@@ -1,0 +1,111 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: beige;
+    padding: 1.5em 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Only round the top corners */
+    display: block; /* Remove any extra space below the image */
+}
+
+h1{
+    margin: 0;
+    line-height: 1;
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    
+}
+
+.card{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure child elements do not overflow */
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1.125em;
+}
+
+.header-text{
+    font-size: .75rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.header-para{
+    color: #6E7F80;
+    font-size: .875rem;
+}
+
+.curr-price{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Fraunces", serif;
+    color: #40826d;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: grey;    
+
+}
+
+.cartBtn {
+    width: 100%;
+    padding: .9em;
+    border-radius: 10px;
+    background-color: #40826d;
+    color: #FFF;
+    font-weight: 900;
+}
+
+@media (min-width: 600px) {
+    .row {
+        display: flex;
+        gap: 1em;
+        align-items: start;
+    }
+
+   .container{
+    padding: 1.5em;
+   }
+
+   .card{
+     max-width: 600px;
+     padding: 0;
+   }
+   .container{
+    max-width: 600px;
+   }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensure body takes full viewport height */
+    }
+    
+    h1{
+        font-weight: 900;
+    }
+
+    #product-image {
+        content: url('./images/image-product-desktop.jpg');
+    }
+
+    .cartBtn:hover {
+        background-color: #365f4c; /* Change to desired hover color */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+}
